@@ -1,6 +1,6 @@
 FROM ghcr.io/dellelce/mkit-base as build
 
-RUN ./mkit.sh profile=postgresql /app/postgresql
+RUN ./mkit.sh profile=postgres /app/postgresql
 
 FROM alpine:3.8 as target
 
